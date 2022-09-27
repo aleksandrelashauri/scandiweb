@@ -1,0 +1,61 @@
+.nav_contaner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.dropdown:hover body{
+  background: black;
+}
+.nav_cont {
+  display: flex;
+}
+.nav_item {
+  padding: 28px 32px; 
+  text-transform: uppercase;
+}
+.rel_logo {
+  position: relative;
+}
+.ab_logo {
+  position: absolute;
+  top: 1px;
+  right: -2px;
+}
+.back_logo {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  z-index: 1;
+}
+.arrow_logo {
+  position: absolute;
+  top: 0px;
+  left: 18px;
+  z-index: 1;
+}
+.bag_right{
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+.bag_left{
+  position: absolute;
+  top: 14px;
+  left: 6px;
+}
+.pos_relative{
+  position: relative
+}
+.list_length{
+  position: absolute;
+  bottom: 8px;
+  left: 13px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  justify-content: space-around;
+}

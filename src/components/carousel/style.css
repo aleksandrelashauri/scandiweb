@@ -1,0 +1,29 @@
+.SlideImage {
+  width: 200px;
+  height: 288px;
+}
+.StyledSlider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightArrow {
+  position: absolute;
+  bottom: 10%;
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.73);
+  right: 16%;
+  cursor: pointer;
+}
+
+.leftArrow {
+  position: absolute;
+  bottom: 10%;
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.73);
+  left: 57%;
+  cursor: pointer;
+}

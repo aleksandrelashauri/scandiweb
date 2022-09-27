@@ -1,0 +1,81 @@
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card_items {
+  flex: 0 0 33.333333%;
+}
+.card_img {
+  width: 354px;
+  height: 330px;
+}
+.header_cont {
+  margin-left: 177px;
+  font-style: normal;
+  font-weight: 400;
+}
+.card:hover .bag_cart {
+  display: block;
+}
+.details_cont {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+}
+.bag_cart {
+  display: none;
+  position: absolute;
+  bottom: 29px;
+  right: 16px;
+  background-image: url("../../assets/bag_cart.svg");
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.bag_wheel_left {
+  position: absolute;
+  bottom: 16px;
+  right: 27px;
+}
+.bag_wheel_right {
+  position: absolute;
+  bottom: 16px;
+  right: 18px;
+}
+.bag {
+  position: absolute;
+  bottom: 22px;
+  right: 16px;
+}
+.prices_cont {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+}
+.stock {
+  position: absolute;
+  left: 25.42%;
+  right: 25.71%;
+  top: 44.24%;
+  bottom: 43.94%;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
