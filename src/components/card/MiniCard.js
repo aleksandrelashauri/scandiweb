@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { addItem, removeItem } from "../../store/action/data";
-import uuid from "react-uuid";
+import { v4 as uuidv4 } from 'uuid'
 import "./styles.css";
 
 class miniCard extends Component {
@@ -76,14 +76,14 @@ class miniCard extends Component {
                   </div>
                   <div>
                     {data.data.attributes.map(({ name, items, id }) => (
-                      <div key={uuid()}>
+                      <div key={uuidv4()}>
                         <div className="mini_size">{name}</div>
                         <div style={{ display: "flex" }}>
                           {items.map(({ value }) => (
                             <button
                               value={value}
                               id={name}
-                              key={uuid()}
+                              key={uuidv4()}
                               style={{
                                 background: value,
                                 color: value,

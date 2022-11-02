@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-// import { SlideImage, StyledSlider } from "./SlideImage";
-// import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
-import carousel_arraw from '../../assets/carousel_arraw.svg'
-import carousel_arraw_r from '../../assets/carousel_arraw_r.svg'
+import carousel_arraw from "../../assets/carousel_arraw.svg";
+import carousel_arraw_r from "../../assets/carousel_arraw_r.svg";
 import "./style.css";
 
 class Slider extends Component {
@@ -29,8 +27,12 @@ class Slider extends Component {
   render() {
     return (
       <div className="StyledSlider">
-        <button className="leftArrow" onClick={() => this.prevSlide()} ><img src={carousel_arraw}></img></button>
-        <button className="rightArrow" onClick={() => this.nextSlide()} ><img src={carousel_arraw_r}></img></button>
+        <button className="leftArrow" onClick={() => this.prevSlide()}>
+          <img src={carousel_arraw}></img>
+        </button>
+        <button className="rightArrow" onClick={() => this.nextSlide()}>
+          <img src={carousel_arraw_r}></img>
+        </button>
         {this.props.slides.map((slide, index) => {
           return (
             <div key={index}>

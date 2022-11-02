@@ -1,7 +1,5 @@
 .dropdown {
   position: relative;
-  /* display: inline-block; */
-  /* cursor: pointer; */
 }
 
 .dropdown-content {
@@ -51,5 +49,5 @@
   padding-right: 7px;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;  
+  font-size: 18px;
 }

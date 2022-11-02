@@ -4,9 +4,8 @@ import { getProductQuery } from "../../queries/queries";
 import DOMPurify from "dompurify";
 import { connect } from "react-redux";
 import AddItem from "./addproduct/AddItem";
-import uuid from "react-uuid";
+import { v4 as uuidv4 } from 'uuid'
 import "./styles.css";
-
 
 class ProductDetails extends Component {
   constructor(props) {
@@ -95,12 +94,12 @@ class ProductDetails extends Component {
               <div className="product_brand">{product.brand}</div>
               <div className="product_name">{product.name}</div>
               {product.attributes.map(({ name, items, id }) => (
-                <div key={uuid()}>
+                <div key={uuidv4()}>
                   <div className="product_atr">{name}:</div>
-                  <div >
+                  <div>
                     {items.map(({ value }) => (
                       <button
-                        key={uuid()}
+                        key={uuidv4()}
                         onClick={(event) => this.handleAttributes(event)}
                         value={value}
                         id={name}
@@ -124,17 +123,16 @@ class ProductDetails extends Component {
               <div>
                 <div className="product_price">Price</div>
                 <div className="product_amount">
-
-                {product.prices
-                  .filter((el) => el.currency.symbol == cur)
-                  .map((data) => {
-                    return (
-                      <div key={uuid()}>
-                        {data.currency.symbol} {data.amount}
-                      </div>
-                    );
-                  })}
-              </div>
+                  {product.prices
+                    .filter((el) => el.currency.symbol == cur)
+                    .map((data) => {
+                      return (
+                        <div key={uuidv4()}>
+                          {data.currency.symbol} {data.amount}
+                        </div>
+                      );
+                    })}
+                </div>
               </div>
               <AddItem
                 params={{ data: product, attributes: this.state.attributes }}

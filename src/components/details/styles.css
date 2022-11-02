@@ -19,7 +19,6 @@
   justify-content: space-around;
   align-items: flex-start;
   align-content: stretch;
-  /* margin: 0; */
   padding: 0px 0 117px;
 }
 .danger_html {
@@ -51,12 +50,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  /* identical to box height, or 100% */
-
   font-size: 18px;
   line-height: 18px;
-  /* identical to box height, or 100% */
-
   color: #1d1f22;
 }
 .product_price {
@@ -65,8 +60,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  /* identical to box height, or 100% */
-
   color: #1d1f22;
 }
 .product_amount {
@@ -75,7 +68,5 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 18px;
-  /* or 75% */
-
   color: #1d1f22;
 }

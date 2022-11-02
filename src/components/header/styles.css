@@ -1,18 +1,18 @@
 .nav_contaner {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.dropdown:hover body{
+.dropdown:hover body {
   background: black;
 }
 .nav_cont {
   display: flex;
 }
 .nav_item {
-  padding: 28px 32px; 
+  padding: 28px 32px;
   text-transform: uppercase;
 }
 .rel_logo {
@@ -35,20 +35,20 @@
   left: 18px;
   z-index: 1;
 }
-.bag_right{
+.bag_right {
   position: absolute;
   top: 14px;
   left: 15px;
 }
-.bag_left{
+.bag_left {
   position: absolute;
   top: 14px;
   left: 6px;
 }
-.pos_relative{
-  position: relative
+.pos_relative {
+  position: relative;
 }
-.list_length{
+.list_length {
   position: absolute;
   bottom: 8px;
   left: 13px;

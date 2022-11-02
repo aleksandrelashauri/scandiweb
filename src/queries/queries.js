@@ -64,29 +64,29 @@ const getProductQuery = gql`
   query Product($id: String!) {
     product(id: $id) {
       id
+      name
+      inStock
+      gallery
+      description
+      category
+      attributes {
+        id
         name
-        inStock
-        gallery
-        description
-        category
-        attributes {
+        type
+        items {
+          displayValue
+          value
           id
-          name
-          type
-          items {
-            displayValue
-            value
-            id
-          }
         }
-        prices {
-          currency {
-            label
-            symbol
-          }
-          amount
+      }
+      prices {
+        currency {
+          label
+          symbol
         }
-        brand
+        amount
+      }
+      brand
     }
   }
 `;
@@ -99,9 +99,4 @@ const getCurrencies = gql`
   }
 `;
 
-export {
-  getProductsQuery,
-  getCategories,
-  getProductQuery,
-  getCurrencies
-};
+export { getProductsQuery, getCategories, getProductQuery, getCurrencies };

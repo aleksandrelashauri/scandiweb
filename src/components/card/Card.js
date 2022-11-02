@@ -4,8 +4,7 @@ import { addItem, removeItem } from "../../store/action/data";
 import { NavLink } from "react-router-dom";
 
 import Slider from "../carousel/Carousel";
-import uuid from "react-uuid";
-
+import { v4 as uuidv4 } from 'uuid'
 import "./styles.css";
 
 class Card extends Component {
@@ -58,7 +57,7 @@ class Card extends Component {
         <div>
           {result.map(({ id, data, count }) => {
             return (
-              <div className="dFlex border" key={uuid()}>
+              <div className="dFlex border" key={uuidv4()}>
                 <div>
                   <div className="mini_brand">{data.data.brand}</div>
                   <div className="cart_name">{data.data.name}</div>
@@ -67,7 +66,7 @@ class Card extends Component {
                       .filter((el) => el.currency.symbol == cur)
                       .map((data) => {
                         return (
-                          <div key={uuid()}>
+                          <div key={uuidv4()}>
                             {data.currency.symbol} {data.amount}
                           </div>
                         );
@@ -75,12 +74,12 @@ class Card extends Component {
                   </div>
                   <div>
                     {data.data.attributes.map(({ name, items }) => (
-                      <div key={uuid()}>
+                      <div key={uuidv4()}>
                         <div className="cart_atr">{name}:</div>
                         <div>
                           {items.map(({ value }) => (
                             <button
-                              key={uuid()}
+                              key={uuidv4()}
                               value={value}
                               id={name}
                               style={{
@@ -124,13 +123,19 @@ class Card extends Component {
               </div>
             );
           })}
-          <div className="cart_tax">Tax 21%: <span>{slash}</span></div>
-          <div className="cart_quan">Quantity: <span>{list.length}</span></div>
-          <div className="cart_total">Total: <span>{total}</span></div>
+          <div className="cart_tax">
+            Tax 21%: <span>{slash}</span>
+          </div>
+          <div className="cart_quan">
+            Quantity: <span>{list.length}</span>
+          </div>
+          <div className="cart_total">
+            Total: <span>{total}</span>
+          </div>
         </div>
         <div className="nav_link two">
-            <NavLink to="/"> ORDER</NavLink>
-          </div>
+          <NavLink to="/"> ORDER</NavLink>
+        </div>
       </div>
     );
   }

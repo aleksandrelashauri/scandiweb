@@ -37,7 +37,6 @@ class ClothesProducts extends Component {
               return (
                 <div key={categories.id} className="card_items">
                   <ul>
-                    {console.log(categories.inStock)}
                     <li
                       className="card"
                       style={{ opacity: categories.inStock ? 1 : 0.5 }}
