@@ -2,7 +2,6 @@
   "name": "scandiweb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aleksandrelashauri.github.io/scandiweb",
   "dependencies": {
     "apollo-boost": "^0.1.2",
     "dompurify": "^2.4.0",
@@ -19,8 +18,6 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
