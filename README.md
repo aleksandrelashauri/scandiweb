@@ -1,7 +1,13 @@
-# SCANDIWEB Test Project
+## About The Project
+  It's an e-commerce front-end application built with React and Redux. It has product listing page - PLP, product description page -PDP, cart page, and cart overlay.
 
-> This is a test project from SCANDIWEB.
-> This E-commerce app has different products which could be added to cart and be filtered according to category.
+  A user can can hover over specific products to see the attributes (options) of the those products if such products have options. He/she can add products to cart either from the PLP page using the cart icon or from the PDP page using Add To Cart button. He/she can increment/decrement the quantity of the added products. He/she can also remove specific products from cart entirely using the remove button.
+
+  A user can filter products based on their categories such as tech, clothes. All category render the entire products on the PLP page.
+
+  A user can also exchange currencies using the currency exchanger on the header. Again, the cart icon on the header keeps count of the number of products added to cart.
+
+  This project consumes a third party GraphQL API.
 
 ## Built With
 
