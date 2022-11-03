@@ -14,7 +14,7 @@
 
 ## Live Demos
 
-- netlify: [netlify](https://scandicopy.netlify.app/)
+- front-end: [netlify](https://scandicopy.netlify.app/)
 - back-end: [heroku](https://graphqlshoping.herokuapp.com/)
 
 ## Getting Started
